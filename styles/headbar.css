@@ -1,0 +1,31 @@
+.headbar {
+    display: flex;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    border-color:rgb(246, 246, 246);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    z-index: 100;
+    margin-left: 14px;
+}
+
+.headbar .photos img,
+.headbar .wood img,
+.headbar .latex img,
+.headbar .code img {
+    margin-top: 1px;
+    height: 48px;
+}
+
+.headbar .photos img,
+.headbar .wood img,
+.headbar .latex img {
+    margin-right: 24px;
+}
+
+
+
