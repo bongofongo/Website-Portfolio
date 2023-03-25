@@ -73,11 +73,14 @@
     margin-right: 15px;
 }
 
+
 .head-photo-container {
-    display: flex;
-    height: 60vh;
     margin-top: 20px;
-    padding: 0 0 0 0;
+    height: auto;
+    width: 90%; /* or any other desired maximum width */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .head-photo-container .head-photo {

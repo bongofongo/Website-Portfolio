@@ -1,31 +1,98 @@
 .headbar {
     display: flex;
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    height: 48px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 252, 252);
+    background-color: rgba(142, 183, 255, 0.8);
     border-color:rgb(246, 246, 246);
     box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
     z-index: 100;
-    margin-left: 14px;
 }
 
-.headbar .photos img,
-.headbar .wood img,
-.headbar .latex img,
-.headbar .code img {
-    margin-top: 1px;
-    height: 48px;
+.head-total {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 6%;
+    right: 1%;
+    align-items: center;
 }
 
-.headbar .photos img,
-.headbar .wood img,
-.headbar .latex img {
-    margin-right: 24px;
+.directory {
+    opacity: 0;
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    transition: opacity 0.1s;
+}
+
+.head-total:hover .directory {
+    opacity: 1;
 }
 
 
+.headbar .photos,
+.headbar .home,
+.headbar .latex,
+.headbar .toggle-headbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 2px 6px 2px;
+}
+
+.headbar .photos div,
+.headbar .home div,
+.headbar .latex div,
+.headbar .toggle-headbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    width: 34px;
+    height: 34px;
+    border-radius: 5%; 
+}
+
+.headbar .photos p,
+.headbar .home p,
+.headbar .latex p,
+.headbar .toggle-headbar p {
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .headbar .photos div,
+    .headbar .home div,
+    .headbar .latex div,
+    .headbar .toggle-headbar div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    
+        /*border: 1px solid rgb(123, 165, 255);*/
+        width: 20px;
+        height: 34px;
+        border-radius: 5%;
+    }
+    .headbar .photos p,
+    .headbar .home p,
+    .headbar .latex p,
+    .headbar .toggle-headbar p {
+        font-size: 6px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 
