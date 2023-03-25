@@ -9,7 +9,7 @@ document.addEventListener('keydown', function(event) {
             behavior: "smooth"});
     } else if (event.key === '2') {
         window.scrollTo({
-            top: 1500,
+            top: 8500,
             behavior: "smooth"});
     }
     if (event.key === '9') {

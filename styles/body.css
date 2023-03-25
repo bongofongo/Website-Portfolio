@@ -35,11 +35,30 @@
     
     color: rgba(0, 0, 0, 0.85);
     background-color: rgb(241, 241, 241);
-    box-shadow: 0 0 2px 2px rgba(0,0,0,0.0.08);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.0.8);
     border: 0.5px solid rgb(246, 246, 246)
 }
 
 .whitespace {
     display: block;
     height: 2100px;
+}
+
+.title-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    display: block;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.cs152 {
+    margin-top: 28px;
+    height: 670px;
+    width: 700px; /* or any other desired maximum width */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
